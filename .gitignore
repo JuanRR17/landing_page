@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Node / React / Vite
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Entorno y sistema
+.env
+.DS_Store
