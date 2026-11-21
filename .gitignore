@@ -17,3 +17,5 @@ dist-ssr/
 # Entorno y sistema
 .env
 .DS_Store
+backend/*.db
+backend/.env
