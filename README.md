@@ -23,21 +23,18 @@ backend/
 ```
 
 ### Frontend (`frontend/`)
-
 ```text
-frontend/
 ├── .env.example            # Ejemplo de variables de entorno del frontend (ej. VITE_API_URL)
 ├── index.html              # Documento HTML raíz donde se monta la aplicación React
-├── package.json            # Dependencias npm y scripts del proyecto (dev, build, lint)
+├── package.json            # Dependencias npm (incluye React, Vite y Bootstrap) y scripts
 ├── vite.config.js          # Configuración de Vite (puerto, plugins, proxy si aplica)
 └── src/
-    ├── main.jsx            # Punto de entrada de React y montaje del componente raíz
+    ├── main.jsx            # Punto de entrada de React; importa Bootstrap CSS/JS y monta <App />
     ├── App.jsx             # Componente principal y flujo base de conexión/autenticación
-    ├── index.css           # Estilos globales base de la aplicación
-    ├── services/           # Llamadas HTTP a la API (health, login, registro, /me)
-    └── components/         # Componentes reutilizables de interfaz (formularios, vistas)
+    ├── index.css           # Estilos globales complementarios a Bootstrap
+    ├── services/           # Llamadas HTTP a la API (health, login, registro, /me, recursos)
+    └── components/         # Componentes reutilizables de interfaz con clases de Bootstrap
 ```
-
 ## 1. Clonar el nuevo proyecto
 
 ```bash
@@ -67,7 +64,7 @@ En otra terminal desde la carpeta `frontend`:
 
 ```bash
 cd frontend                                                     # Entra en la carpeta del frontend
-npm install                                                     # Instala las dependencias de Node/React definidas en package.json
+npm install                                                     # Instala las dependencias de Node/React/Bootstrap definidas en package.json
 npm run dev                                                     # Arranca el servidor de desarrollo de Vite en local
 ```
 
